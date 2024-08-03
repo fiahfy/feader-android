@@ -9,5 +9,5 @@ Simple RSS reader application for Android.
 ## Development
 
 ```
-$ studio feader-android
+studio feader-android
 ```
