@@ -1,4 +1,4 @@
-package net.fiahfy.feader
+package net.fiahfy.feader.ui.screens
 
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable

@@ -9,6 +9,11 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import net.fiahfy.feader.ui.components.BottomBar
+import net.fiahfy.feader.ui.components.BottomBarItem
+import net.fiahfy.feader.ui.components.TopBar
+import net.fiahfy.feader.ui.screens.HomeScreen
+import net.fiahfy.feader.ui.screens.SettingsScreen
 import net.fiahfy.feader.ui.theme.FeaderTheme
 
 @Composable

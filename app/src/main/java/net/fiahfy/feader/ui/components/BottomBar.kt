@@ -1,4 +1,4 @@
-package net.fiahfy.feader
+package net.fiahfy.feader.ui.components
 
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
