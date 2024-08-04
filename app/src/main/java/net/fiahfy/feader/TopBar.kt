@@ -11,11 +11,11 @@ import androidx.navigation.compose.currentBackStackEntryAsState
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun TopNavigationBar(navController: NavHostController) {
+fun TopBar(navController: NavHostController) {
     val navBackStackEntry by navController.currentBackStackEntryAsState()
     val currentRoute = navBackStackEntry?.destination?.route
 
-    val item = BottomNavigationBarItem.entries.find { it.id == currentRoute }
+    val item = BottomBarItem.entries.find { it.id == currentRoute }
 
     TopAppBar(
         title = { item?.let { Text(stringResource(id = item.resId)) } }

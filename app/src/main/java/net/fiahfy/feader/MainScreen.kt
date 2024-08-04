@@ -17,15 +17,15 @@ fun MainScreen() {
 
     FeaderTheme {
         Scaffold(
-            topBar = { TopNavigationBar(navController = navController) },
-            bottomBar = { BottomNavigationBar(navController = navController) }) {
+            topBar = { TopBar(navController = navController) },
+            bottomBar = { BottomBar(navController = navController) }) {
             Box(modifier = Modifier.padding(it)) {
                 NavHost(
                     navController = navController,
-                    startDestination = BottomNavigationBarItem.Home.id
+                    startDestination = BottomBarItem.Home.id
                 ) {
-                    composable(BottomNavigationBarItem.Home.id) { HomeScreen() }
-                    composable(BottomNavigationBarItem.Settings.id) { SettingsScreen() }
+                    composable(BottomBarItem.Home.id) { HomeScreen() }
+                    composable(BottomBarItem.Settings.id) { SettingsScreen() }
                 }
             }
         }

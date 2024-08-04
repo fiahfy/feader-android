@@ -13,7 +13,7 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.currentBackStackEntryAsState
 
 @Composable
-fun BottomNavigationBar(navController: NavHostController) {
+fun BottomBar(navController: NavHostController) {
     val navBackStackEntry by navController.currentBackStackEntryAsState()
     val currentRoute = navBackStackEntry?.destination?.route
 
@@ -21,7 +21,7 @@ fun BottomNavigationBar(navController: NavHostController) {
         containerColor = MaterialTheme.colorScheme.surfaceVariant,
         modifier = Modifier
     ) {
-        BottomNavigationBarItem.entries.forEach {
+        BottomBarItem.entries.forEach {
             NavigationBarItem(
                 icon = {
                     Icon(

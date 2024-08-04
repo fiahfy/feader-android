@@ -5,7 +5,7 @@ import androidx.compose.material.icons.filled.Home
 import androidx.compose.material.icons.filled.Settings
 import androidx.compose.ui.graphics.vector.ImageVector
 
-enum class BottomNavigationBarItem(
+enum class BottomBarItem(
     val id: String,
     val icon: ImageVector,
     val resId: Int,
